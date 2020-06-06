@@ -1,0 +1,378 @@
+{
+    "atf_form_5320.pdf": {
+        "0": {
+            "type": "Text",
+            "name": "topmostSubform[0].Page1[0].TextField1[0]",
+            "namealt": "For ATF Use Only - NFA Control No.",
+            "flags": "8388609",
+            "justification": "Left"
+        },
+        "1": {
+            "type": "Button",
+            "name": "topmostSubform[0].Page1[0].yes[0]",
+            "namealt": "Part I - Application (Submit in Duplicate) (Print or Type all Entries) - 2.  Firearms to be returned to original Location - Yes",
+            "flags": "0",
+            "justification": "Left",
+            "stateoption": [
+                "1",
+                "Off"
+            ]
+        },
+        "2": {
+            "type": "Button",
+            "name": "topmostSubform[0].Page1[0].no[0]",
+            "namealt": "Part I - Application (Submit in Duplicate) (Print or Type all Entries) - 2.  Firearms to be returned to original Location - No",
+            "flags": "0",
+            "justification": "Left",
+            "stateoption": [
+                "1",
+                "Off"
+            ]
+        },
+        "3": {
+            "type": "Text",
+            "name": "topmostSubform[0].Page1[0].TextField2[0]",
+            "namealt": "Part I - Application (Submit in Duplicate) (Print or Type all Entries) - 1.  Name and Address of Registered Owner (full name, number, street, city, state and zip code)",
+            "flags": "8392704",
+            "justification": "Left"
+        },
+        "4": {
+            "type": "Text",
+            "name": "topmostSubform[0].Page1[0].TextField3[0]",
+            "namealt": "Part I - Application (Submit in Duplicate) (Print or Type all Entries) - 1a.  Telephone Number (include area code)",
+            "flags": "8388608",
+            "justification": "Left"
+        },
+        "5": {
+            "type": "Text",
+            "name": "topmostSubform[0].Page1[0].TextField4[0]",
+            "namealt": "Part I - Application (Submit in Duplicate) (Print or Type all Entries) - 1b.    E-mail Address",
+            "flags": "8388608",
+            "justification": "Left"
+        },
+        "6": {
+            "type": "Text",
+            "name": "topmostSubform[0].Page1[0].TextField4[1]",
+            "namealt": "Part I - Application (Submit in Duplicate) (Print or Type all Entries) - 3.  Dates Firearm (s) will be away from Original Location, if to be Returned to that location, (or dates in transit, if to be permanently relocated). - From (month, day , year)",
+            "flags": "8388608",
+            "justification": "Left"
+        },
+        "7": {
+            "type": "Text",
+            "name": "topmostSubform[0].Page1[0].TextField4to[0]",
+            "namealt": "Part I - Application (Submit in Duplicate) (Print or Type all Entries) - 3.  Dates Firearm (s) will be away from Original Location, if to be Returned to that location, (or dates in transit, if to be permanently relocated). - To (month, day , year)",
+            "flags": "8388608",
+            "justification": "Left"
+        },
+        "8": {
+            "type": "Text",
+            "name": "topmostSubform[0].Page1[0].TextField51[0]",
+            "namealt": "Part I - Application (Submit in Duplicate) (Print or Type all Entries) - 4.  Firearm(s) to be Transported (Complete New Forms for Additional Firearms) - Manufacturer",
+            "flags": "8388608",
+            "justification": "Left"
+        },
+        "9": {
+            "type": "Text",
+            "name": "topmostSubform[0].Page1[0].TextField52[0]",
+            "namealt": "Part I - Application (Submit in Duplicate) (Print or Type all Entries) - 4.  Firearm(s) to be Transported (Complete New Forms for Additional Firearms) - Manufacturer",
+            "flags": "8388608",
+            "justification": "Left"
+        },
+        "10": {
+            "type": "Text",
+            "name": "topmostSubform[0].Page1[0].TextField53[0]",
+            "namealt": "Part I - Application (Submit in Duplicate) (Print or Type all Entries) - 4.  Firearm(s) to be Transported (Complete New Forms for Additional Firearms) - Manufacturer",
+            "flags": "8388608",
+            "justification": "Left"
+        },
+        "11": {
+            "type": "Text",
+            "name": "topmostSubform[0].Page1[0].TextField61[0]",
+            "namealt": "Part I - Application (Submit in Duplicate) (Print or Type all Entries) - 4.  Firearm(s) to be Transported (Complete New Forms for Additional Firearms) - Type of Firearm&#13;(Machinegun, etc.)",
+            "flags": "8388608",
+            "justification": "Left"
+        },
+        "12": {
+            "type": "Text",
+            "name": "topmostSubform[0].Page1[0].TextField62[0]",
+            "namealt": "Part I - Application (Submit in Duplicate) (Print or Type all Entries) - 4.  Firearm(s) to be Transported (Complete New Forms for Additional Firearms) - Type of Firearm&#13;(Machinegun, etc.)",
+            "flags": "8388608",
+            "justification": "Left"
+        },
+        "13": {
+            "type": "Text",
+            "name": "topmostSubform[0].Page1[0].TextField63[0]",
+            "namealt": "Part I - Application (Submit in Duplicate) (Print or Type all Entries) - 4.  Firearm(s) to be Transported (Complete New Forms for Additional Firearms) - Type of Firearm&#13;(Machinegun, etc.)",
+            "flags": "8388608",
+            "justification": "Left"
+        },
+        "14": {
+            "type": "Text",
+            "name": "topmostSubform[0].Page1[0].TextField81[0]",
+            "namealt": "Part I - Application (Submit in Duplicate) (Print or Type all Entries) - 4.  Firearm(s) to be Transported (Complete New Forms for Additional Firearms) - Caliber&#13;or&#13;Gauge",
+            "flags": "8388608",
+            "justification": "Left"
+        },
+        "15": {
+            "type": "Text",
+            "name": "topmostSubform[0].Page1[0].TextField82[0]",
+            "namealt": "Part I - Application (Submit in Duplicate) (Print or Type all Entries) - 4.  Firearm(s) to be Transported (Complete New Forms for Additional Firearms) - Caliber&#13;or&#13;Gauge",
+            "flags": "8388608",
+            "justification": "Left"
+        },
+        "16": {
+            "type": "Text",
+            "name": "topmostSubform[0].Page1[0].TextField83[0]",
+            "namealt": "Part I - Application (Submit in Duplicate) (Print or Type all Entries) - 4.  Firearm(s) to be Transported (Complete New Forms for Additional Firearms) - Caliber&#13;or&#13;Gauge",
+            "flags": "8388608",
+            "justification": "Left"
+        },
+        "17": {
+            "type": "Text",
+            "name": "topmostSubform[0].Page1[0].TextField91[0]",
+            "namealt": "Part I - Application (Submit in Duplicate) (Print or Type all Entries) - 4.  Firearm(s) to be Transported (Complete New Forms for Additional Firearms) - Model",
+            "flags": "8388608",
+            "justification": "Left"
+        },
+        "18": {
+            "type": "Text",
+            "name": "topmostSubform[0].Page1[0].TextField92[0]",
+            "namealt": "Part I - Application (Submit in Duplicate) (Print or Type all Entries) - 4.  Firearm(s) to be Transported (Complete New Forms for Additional Firearms) - Model",
+            "flags": "8388608",
+            "justification": "Left"
+        },
+        "19": {
+            "type": "Text",
+            "name": "topmostSubform[0].Page1[0].TextField93[0]",
+            "namealt": "Part I - Application (Submit in Duplicate) (Print or Type all Entries) - 4.  Firearm(s) to be Transported (Complete New Forms for Additional Firearms) - Model",
+            "flags": "8388608",
+            "justification": "Left"
+        },
+        "20": {
+            "type": "Text",
+            "name": "topmostSubform[0].Page1[0].TextField101[0]",
+            "namealt": "Part I - Application (Submit in Duplicate) (Print or Type all Entries) - 4.  Firearm(s) to be Transported (Complete New Forms for Additional Firearms) - Barrel Length",
+            "flags": "8388608",
+            "justification": "Left"
+        },
+        "21": {
+            "type": "Text",
+            "name": "topmostSubform[0].Page1[0].TextField102[0]",
+            "namealt": "Part I - Application (Submit in Duplicate) (Print or Type all Entries) - 4.  Firearm(s) to be Transported (Complete New Forms for Additional Firearms) - Barrel Length",
+            "flags": "8388608",
+            "justification": "Left"
+        },
+        "22": {
+            "type": "Text",
+            "name": "topmostSubform[0].Page1[0].TextField103[0]",
+            "namealt": "Part I - Application (Submit in Duplicate) (Print or Type all Entries) - 4.  Firearm(s) to be Transported (Complete New Forms for Additional Firearms) - Barrel Length",
+            "flags": "8388608",
+            "justification": "Left"
+        },
+        "23": {
+            "type": "Text",
+            "name": "topmostSubform[0].Page1[0].TextField111[0]",
+            "namealt": "Part I - Application (Submit in Duplicate) (Print or Type all Entries) - 4.  Firearm(s) to be Transported (Complete New Forms for Additional Firearms) - Overall Length",
+            "flags": "8388608",
+            "justification": "Left"
+        },
+        "24": {
+            "type": "Text",
+            "name": "topmostSubform[0].Page1[0].TextField112[0]",
+            "namealt": "Part I - Application (Submit in Duplicate) (Print or Type all Entries) - 4.  Firearm(s) to be Transported (Complete New Forms for Additional Firearms) - Overall Length",
+            "flags": "8388608",
+            "justification": "Left"
+        },
+        "25": {
+            "type": "Text",
+            "name": "topmostSubform[0].Page1[0].TextField113[0]",
+            "namealt": "Part I - Application (Submit in Duplicate) (Print or Type all Entries) - 4.  Firearm(s) to be Transported (Complete New Forms for Additional Firearms) - Overall Length",
+            "flags": "8388608",
+            "justification": "Left"
+        },
+        "26": {
+            "type": "Text",
+            "name": "topmostSubform[0].Page1[0].TextField121[0]",
+            "namealt": "Part I - Application (Submit in Duplicate) (Print or Type all Entries) - 4.  Firearm(s) to be Transported (Complete New Forms for Additional Firearms) - Serial Number",
+            "flags": "8388608",
+            "justification": "Left"
+        },
+        "27": {
+            "type": "Text",
+            "name": "topmostSubform[0].Page1[0].TextField122[0]",
+            "namealt": "Part I - Application (Submit in Duplicate) (Print or Type all Entries) - 4.  Firearm(s) to be Transported (Complete New Forms for Additional Firearms) - Serial Number",
+            "flags": "8388608",
+            "justification": "Left"
+        },
+        "28": {
+            "type": "Text",
+            "name": "topmostSubform[0].Page1[0].TextField123[0]",
+            "namealt": "Part I - Application (Submit in Duplicate) (Print or Type all Entries) - 4.  Firearm(s) to be Transported (Complete New Forms for Additional Firearms) - Serial Number",
+            "flags": "8388608",
+            "justification": "Left"
+        },
+        "29": {
+            "type": "Text",
+            "name": "topmostSubform[0].Page1[0].TextField13[0]",
+            "namealt": "Part I - Application (Submit in Duplicate) (Print or Type all Entries) - 6.  Reason for Transportation of Firearms (example: Permanent change of Address)",
+            "flags": "8392704",
+            "justification": "Left"
+        },
+        "30": {
+            "type": "Text",
+            "name": "topmostSubform[0].Page1[0].TextField15[0]",
+            "namealt": "Part I - Application (Submit in Duplicate) (Print or Type all Entries) - 7.  Transporting From (number, street, city, county, state, and zip code)",
+            "flags": "8392704",
+            "justification": "Left"
+        },
+        "31": {
+            "type": "Text",
+            "name": "topmostSubform[0].Page1[0].TextField15transport[0]",
+            "namealt": "Part I - Application (Submit in Duplicate) (Print or Type all Entries) - 8.  Transporting To (number, street, city, county, state, and zip code)",
+            "flags": "8392704",
+            "justification": "Left"
+        },
+        "32": {
+            "type": "Text",
+            "name": "topmostSubform[0].Page1[0].TextField124[0]",
+            "namealt": "Part I - Application (Submit in Duplicate) (Print or Type all Entries) - 5. Mailing Address of Returned Form (if different than Item 1)",
+            "flags": "8392704",
+            "justification": "Left"
+        },
+        "33": {
+            "type": "Text",
+            "name": "topmostSubform[0].Page1[0].TextField16[0]",
+            "namealt": "Part I - Application (Submit in Duplicate) (Print or Type all Entries) - 9.  Mode of Transportation (name and address of carrier, if by common or contract carrier)",
+            "flags": "8388608",
+            "justification": "Left"
+        },
+        "34": {
+            "type": "Text",
+            "name": "topmostSubform[0].Page1[0].TextField17[0]",
+            "namealt": "Part I - Application (Submit in Duplicate) (Print or Type all Entries) - Items 10 thru 12 shall be completed if firearm(s) is/are being temporarily exported. - 10.  State Department License No.",
+            "flags": "8388608",
+            "justification": "Left"
+        },
+        "35": {
+            "type": "Text",
+            "name": "topmostSubform[0].Page1[0].TextField18[0]",
+            "namealt": "Part I - Application (Submit in Duplicate) (Print or Type all Entries) - Items 10 thru 12 shall be completed if firearm(s) is/are being temporarily exported. - 11.  Port of Exit",
+            "flags": "8388608",
+            "justification": "Left"
+        },
+        "36": {
+            "type": "Text",
+            "name": "topmostSubform[0].Page1[0].TextField19[0]",
+            "namealt": "Part I - Application (Submit in Duplicate) (Print or Type all Entries) - Items 10 thru 12 shall be completed if firearm(s) is/are being temporarily exported. - 12.  Port of Reentry",
+            "flags": "8388608",
+            "justification": "Left"
+        },
+        "37": {
+            "type": "Text",
+            "name": "topmostSubform[0].Page1[0].DateField1[0]",
+            "namealt": "Part I - Application (Submit in Duplicate) (Print or Type all Entries) - Items 10 thru 12 shall be completed if firearm(s) is/are being temporarily exported. - 14.  Date",
+            "flags": "8388608",
+            "justification": "Left"
+        },
+        "38": {
+            "type": "Signature",
+            "name": "topmostSubform[0].Page1[0].SignatureField1[0]",
+            "namealt": "Part I - Application (Submit in Duplicate) (Print or Type all Entries) - Items 10 thru 12 shall be completed if firearm(s) is/are being temporarily exported. - 13.  Signature of Owner",
+            "flags": "0",
+            "justification": "Left"
+        },
+        "39": {
+            "type": "Button",
+            "name": "topmostSubform[0].Page1[0].CheckBox3[0]",
+            "namealt": "Part II - Action by the Bureau of Alcohol, Tobacco, Firearms and Explosives.  By Authority of the Director, Application to Transport or Temporarily Export the above-listed Firearms(s) to and from the Location, and for the time period indicated, is: 15.  Approved (with the following conditions, if any):",
+            "flags": "1",
+            "justification": "Left",
+            "stateoption": [
+                "1",
+                "Off"
+            ]
+        },
+        "40": {
+            "type": "Button",
+            "name": "topmostSubform[0].Page1[0].CheckBox4[0]",
+            "namealt": "Part II - Action by the Bureau of Alcohol, Tobacco, Firearms and Explosives.  By Authority of the Director, Application to Transport or Temporarily Export the above-listed Firearms(s) to and from the Location, and for the time period indicated, is: 16.  Disapproved (for the following reason(s)): ",
+            "flags": "1",
+            "justification": "Left",
+            "stateoption": [
+                "1",
+                "Off"
+            ]
+        },
+        "41": {
+            "type": "Text",
+            "name": "topmostSubform[0].Page1[0].TextField125[0]",
+            "namealt": "Part II - Action by the Bureau of Alcohol, Tobacco, Firearms and Explosives.  By Authority of the Director, Application to Transport or Temporarily Export the above-listed Firearms(s) to and from the Location, and for the time period indicated, is: 15.  Approved (with the following conditions, if any):",
+            "flags": "8392704",
+            "justification": "Left"
+        },
+        "42": {
+            "type": "Text",
+            "name": "topmostSubform[0].Page1[0].TextField125[1]",
+            "namealt": "Part II - Action by the Bureau of Alcohol, Tobacco, Firearms and Explosives.  By Authority of the Director, Application to Transport or Temporarily Export the above-listed Firearms(s) to and from the Location, and for the time period indicated, is: 15.  Approved (with the following conditions, if any):",
+            "flags": "8392704",
+            "justification": "Left"
+        },
+        "43": {
+            "type": "Signature",
+            "name": "topmostSubform[0].Page1[0].SignatureField2[0]",
+            "namealt": "Part II - Action by the Bureau of Alcohol, Tobacco, Firearms and Explosives.  By Authority of the Director, Application to Transport or Temporarily Export the above-listed Firearms(s) to and from the Location, and for the time period indicated, is: 17.  Signature of Authorized ATF official",
+            "flags": "0",
+            "justification": "Left"
+        },
+        "44": {
+            "type": "Button",
+            "name": "topmostSubform[0].Page1[0].co[0]",
+            "namealt": "Part I - Application (Submit in Duplicate) (Print or Type all Entries) - 1.  Name and Address of Registered Owner (full name, number, street, city, state and zip code). Corporation.",
+            "flags": "0",
+            "justification": "Left",
+            "stateoption": [
+                "1",
+                "Off"
+            ]
+        },
+        "45": {
+            "type": "Button",
+            "name": "topmostSubform[0].Page1[0].ole[0]",
+            "namealt": "Part I - Application (Submit in Duplicate) (Print or Type all Entries) - 1.  Name and Address of Registered Owner (full name, number, street, city, state and zip code). Other Legal Entity.",
+            "flags": "0",
+            "justification": "Left",
+            "stateoption": [
+                "1",
+                "Off"
+            ]
+        },
+        "46": {
+            "type": "Button",
+            "name": "topmostSubform[0].Page1[0].tru[0]",
+            "namealt": "Part I - Application (Submit in Duplicate) (Print or Type all Entries) - 1.  Name and Address of Registered Owner (full name, number, street, city, state and zip code). Trust",
+            "flags": "0",
+            "justification": "Left",
+            "stateoption": [
+                "1",
+                "Off"
+            ]
+        },
+        "47": {
+            "type": "Button",
+            "name": "topmostSubform[0].Page1[0].ind[0]",
+            "namealt": "Part I - Application (Submit in Duplicate) (Print or Type all Entries) - 1.  Name and Address of Registered Owner (full name, number, street, city, state and zip code). Individual.",
+            "flags": "0",
+            "justification": "Left",
+            "stateoption": [
+                "1",
+                "Off"
+            ]
+        },
+        "48": {
+            "type": "",
+            "name": "topmostSubform[0]",
+            "flags": "0",
+            "justification": "Left"
+        }
+    }
+}

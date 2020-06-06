@@ -1,0 +1,47 @@
+atf_form_5320.pdf,Form 5320.20,,
+1,Firearms to be returned to original Location - Yes,1,1 or Off
+2,Firearms to be returned to original Location - No,Off,1 or Off
+3,"Name and Address of Registered Owner (full name, number, street, city, state and zip code)","NFA Owner LLC
+556 Main Street, Anytown ST 00000",
+4,Telephone Number (include area code),555-555-5555,
+5,E-mail Address,email@domain.com,
+6," Dates Firearm (s) will be away from Original Location, From (month, day , year)",01/01/2021,
+7," Dates Firearm (s) will be away from Original Location, To (month, day , year)",12/31/2021,
+8,Manufacturer 1,NFA Owner LLC,
+9,Manufacturer 2,NFA Owner LLC,
+10,Manufacturer 3,NFA Owner LLC,
+11,Type of Firearm 1,SBR,
+12,Type of Firearm 2,SBR,
+13,Type of Firearm 3,SBR,
+14,Caliber 1,5.7,
+15,Caliber 2,5.56,
+16,Caliber 3,300,
+17,Model 1,PS90,
+18,Model 2,AR-15,
+19,Model 3,AR-15,
+20,Barrel Length 1,"10.3""",
+21,Barrel Length 2,"10.5""",
+22,Barrel Length 3,"7.5""",
+23,Overall Length 1,"19.75""",
+24,Overall Length 2,"28""",
+25,Overall Length 3,"25""",
+26,Serial Number 1,SN1,
+27,Serial Number 2,SN2,
+28,Serial Number 3,SN3,
+29,Reason for Transportation of Firearms,"Training, competition, recreational shooting, self defense, and all other lawful purposes.",
+30,"Transporting From (number, street, city, county, state, and zip code)","NFA Owner LLC
+556 Main Street, Anytown ST 00000",
+31,"Transporting To (number, street, city, county, state, and zip code)",,
+32,Mailing Address of Returned Form (if different than Item 1),"NFA Owner LLC
+ATTN: John NFA
+556 Main Street, Anytown, ST 00000",
+33,"Mode of Transportation (name and address of carrier, if by common or contract carrier)",Private or Commercial Vehicle,
+34,State Department License No.,,
+35,Port of Exit,,
+36,Port of Reentry,,
+37,Date,03JUN2020,
+38,Signature of Owner,signature.jpg,
+44,Corporation,1,1 or Off
+45,Other Legal Entity,Off,1 or Off
+46,Trust,Off,1 or Off
+47,Individual,Off,1 or Off
