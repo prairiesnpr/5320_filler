@@ -1,0 +1,3 @@
+pdfforms
+PyPDF2
+reportlab
