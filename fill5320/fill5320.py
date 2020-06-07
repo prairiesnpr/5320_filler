@@ -116,8 +116,8 @@ def main(argv=None):
             # sign it
             os.makedirs(os.path.dirname("signed/"), exist_ok=True)
             sign_pdf(
-                "signed/" + filename,
-                "filled/" + filename,
+                os.path.join("signed", filename),
+                os.path.join("filled", filename),
                 "signature.png",
                 "1x70x195x200x12",
             )
