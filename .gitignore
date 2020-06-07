@@ -2,3 +2,5 @@ personal
 signed
 filled
 .vscode
+test
+__pycache__

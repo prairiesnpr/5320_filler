@@ -93,30 +93,35 @@ def read_dest_data(instream):
     return form_data
 
 
-with open("static_data.csv", "r", encoding="utf-8") as df:
-    form_static_data = read_data(df)
+def main(argv=None):
+    with open("static_data.csv", "r", encoding="utf-8") as df:
+        form_static_data = read_data(df)
 
-with open("destinations_data.csv", "r", encoding="utf-8") as df:
-    form_dest_data = read_dest_data(df)
+    with open("destinations_data.csv", "r", encoding="utf-8") as df:
+        form_dest_data = read_dest_data(df)
 
-field_defs = load_field_defs("fields.json")
+    field_defs = load_field_defs("fields.json")
 
-for fd, fd_val in form_static_data.items():
-    for di, dest in form_dest_data.items():
-        fileparts = fd.split(".")
-        fd_val[dest["id"]] = dest["address"]
-        fd_val[DATE_FIELD] = datetime.now().strftime("%x")
-        filename = "{}_{}.{}".format(fileparts[0], dest["postfix"], fileparts[1])
-        out_val = {filename: fd_val}
-        fg = fill_forms(make_path("filled/"), field_defs, out_val, True)
+    for fd, fd_val in form_static_data.items():
+        for di, dest in form_dest_data.items():
+            fileparts = fd.split(".")
+            fd_val[dest["id"]] = dest["address"]
+            fd_val[DATE_FIELD] = datetime.now().strftime("%x")
+            filename = "{}_{}.{}".format(fileparts[0], dest["postfix"], fileparts[1])
+            out_val = {filename: fd_val}
+            fg = fill_forms(make_path("filled/"), field_defs, out_val, True)
 
-        for filepath in fg:
-            print(filepath)
-        # sign it
-        os.makedirs(os.path.dirname("signed/"), exist_ok=True)
-        sign_pdf(
-            "signed/" + filename,
-            "filled/" + filename,
-            "signature.png",
-            "1x70x195x200x12",
-        )
+            for filepath in fg:
+                print(filepath)
+            # sign it
+            os.makedirs(os.path.dirname("signed/"), exist_ok=True)
+            sign_pdf(
+                "signed/" + filename,
+                "filled/" + filename,
+                "signature.png",
+                "1x70x195x200x12",
+            )
+
+
+if __name__ == "__main__":
+    main()
