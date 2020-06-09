@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import argparse
+import sys
 import csv
 import os
 from pdfforms.pdfforms import (
@@ -16,6 +17,13 @@ from datetime import datetime
 from reportlab.pdfgen import canvas
 
 DATE_FIELD = "37"
+SIGNATURE_FILE = "signature.png"
+SIGNED_DIR = "signed"
+FILLED_DIR = "filled"
+DEST_CSV = "destinations_data.csv"
+STATIC_CSV = "static_data.csv"
+FIELDS_FILE = "fields.json"
+SIGNATURE_LOCATION = "1x70x195x200x12"
 
 
 def _get_tmp_filename(suffix=".pdf"):
@@ -94,13 +102,15 @@ def read_dest_data(instream):
 
 
 def main(argv=None):
-    with open("static_data.csv", "r", encoding="utf-8") as df:
+    args = parse_cli(argv or sys.argv[1:])
+
+    with open(args.static_file, "r", encoding="utf-8") as df:
         form_static_data = read_data(df)
 
-    with open("destinations_data.csv", "r", encoding="utf-8") as df:
+    with open(args.dest_file, "r", encoding="utf-8") as df:
         form_dest_data = read_dest_data(df)
 
-    field_defs = load_field_defs("fields.json")
+    field_defs = load_field_defs(args.field_defs)
 
     for fd, fd_val in form_static_data.items():
         for di, dest in form_dest_data.items():
@@ -109,18 +119,61 @@ def main(argv=None):
             fd_val[DATE_FIELD] = datetime.now().strftime("%x")
             filename = "{}_{}.{}".format(fileparts[0], dest["postfix"], fileparts[1])
             out_val = {filename: fd_val}
-            fg = fill_forms(make_path("filled/"), field_defs, out_val, True)
+            fg = fill_forms(
+                make_path(os.path.join(FILLED_DIR, "")), field_defs, out_val, True
+            )
 
             for filepath in fg:
                 print(filepath)
-            # sign it
-            os.makedirs(os.path.dirname("signed/"), exist_ok=True)
-            sign_pdf(
-                os.path.join("signed", filename),
-                os.path.join("filled", filename),
-                "signature.png",
-                "1x70x195x200x12",
-            )
+            # sign it if the signature file is present
+            if os.path.exists(SIGNATURE_FILE):
+                os.makedirs(
+                    os.path.dirname(os.path.join(SIGNED_DIR, "")), exist_ok=True
+                )
+                sign_pdf(
+                    os.path.join(SIGNED_DIR, filename),
+                    os.path.join(FILLED_DIR, filename),
+                    args.signature_image,
+                    args.signature_position,
+                )
+            else:
+                print("No signature file (signature.png) exists, skipping.")
+
+
+def parse_cli(*args):
+    parser = argparse.ArgumentParser(prog="fill5320")
+    parser.add_argument(
+        "-i",
+        "--static-file",
+        default=STATIC_CSV,
+        help="Static data csv file (default: static_data.csv)",
+    )
+    parser.add_argument(
+        "-d",
+        "--dest-file",
+        default=DEST_CSV,
+        help="Destinations csv file (default: destinations_data.csv)",
+    )
+    parser.add_argument(
+        "-f",
+        "--field-defs",
+        default=FIELDS_FILE,
+        help="Field definition file (default: fields.json)",
+    )
+    parser.add_argument(
+        "-s",
+        "--signature-image",
+        default=SIGNATURE_FILE,
+        help="Signature image (default: signature.png)",
+    )
+    parser.add_argument(
+        "-p",
+        "--signature-position",
+        default=SIGNATURE_LOCATION,
+        help="Signature image position (default: 1x70x195x200x12) [page number, x, y, width, height]",
+    )
+
+    return parser.parse_args(*args)
 
 
 if __name__ == "__main__":
