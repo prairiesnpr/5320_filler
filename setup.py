@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="fill5320",
-    version="0.0.7",
+    version="0.0.8",
     author="PrairieSnpr",
     author_email="midnryanmiller@gmail.com",
     description="A tool to fill ATF form 5320.20",
