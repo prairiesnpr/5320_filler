@@ -1,9 +1,80 @@
 ﻿field,Description,Address,File Postfix,Notes
-31,"Transporting To (number, street, city, county, state, and zip code)","11250 Waples Mill Rd
-Fairfax, VA 22030",VA,NRA range
+31,"Transporting To (number, street, city, county, state, and zip code)","15222 Seward Hwy
+Anchorage, AK 99503",AK,The Rabbit Creek Shooting Park
 31,"Transporting To (number, street, city, county, state, and zip code)","4387 Turner Mill Rd
 Talladega, AL 35160",AL,CMP Range
-31,"Transporting To (number, street, city, county, state, and zip code)","3230 Adams Creek Rd
-Havelock, NC 28532",NC,Sure Shot
+31,"Transporting To (number, street, city, county, state, and zip code)","574 Clinton Road
+Conway, AR 72032",AR,Dr. James E. Moore Jr. Camp Robinson Firing Range
+31,"Transporting To (number, street, city, county, state, and zip code)","26700 Buckeye Hills Dr
+Buckeye, AZ 85326",AZ,Joe Foss Shooting Complex 
+31,"Transporting To (number, street, city, county, state, and zip code)","4201 South Parker Road
+Aurora, CO 80014",CO,Family Shooting Center at Cherry Creek State Park
+31,"Transporting To (number, street, city, county, state, and zip code)","1205 River Road
+New Castle DE 19720",DE,Ommelanden Hunter Education Training Center
+31,"Transporting To (number, street, city, county, state, and zip code)","10900 Steelfield Road
+Panama City Beach, FL 32413",FL,Bay County Shooting Range
+31,"Transporting To (number, street, city, county, state, and zip code)","8040 Roswell Rd
+Sandy Springs, GA 30350",GA,Sandy Springs Gun Club and Range
+31,"Transporting To (number, street, city, county, state, and zip code)","1776 272nd Ave
+Spirit Lake, IA",IA,Spring Run Shooting Range
+31,"Transporting To (number, street, city, county, state, and zip code)","2420 E. Kuna-Mora Rd
+Kuna, ID 83634",ID,Black's Creek Shooting Range
+31,"Transporting To (number, street, city, county, state, and zip code)","8004 South S.R. 243
+Cloverdale, IN 46120",IN,Deer Creek FWA 
+31,"Transporting To (number, street, city, county, state, and zip code)","368 Navajo Road, 
+McPherson KS 67460",KS,Outback Park & Public Range
 31,"Transporting To (number, street, city, county, state, and zip code)","690 Ritchey Ln
 West Point, KY 40177",KY,Knob Creek
+31,"Transporting To (number, street, city, county, state, and zip code)","168 Ben Durden Road,
+Benton, LA 71006",LA,Bodcau Shooting Range
+31,"Transporting To (number, street, city, county, state, and zip code)","5380 Sawmill Lake Road
+Ortonville, MI 48462",MI,Ortonville shooting range
+31,"Transporting To (number, street, city, county, state, and zip code)","Beroun Crossing Rd
+Pine City, MN 55063",MN,Chengwatana State Forest
+31,"Transporting To (number, street, city, county, state, and zip code)","3900 Highway 32
+Park Hills, MO 63601",MO,Sgt. Darrell S. Cole Memorial Shooting Range
+31,"Transporting To (number, street, city, county, state, and zip code)","1180 Sandflat Road
+Meridian, MS 39301",MS,Meridian Public Safety Training Facility
+31,"Transporting To (number, street, city, county, state, and zip code)","8066 HWY 12
+Baker MT 59313",MT,Fallon County Gun Range
+31,"Transporting To (number, street, city, county, state, and zip code)","3230 Adams Creek Rd
+Havelock, NC 28532",NC,Sure Shot
+31,"Transporting To (number, street, city, county, state, and zip code)","106th St SE
+Bismarck, ND 58504",ND,MacLean Bottoms Shooting Range
+31,"Transporting To (number, street, city, county, state, and zip code)","6788 W Husker Hwy
+Alda, NE 68810",NE,Heartland Public Shooting Park
+31,"Transporting To (number, street, city, county, state, and zip code)","2 Hampshire Dr
+Hudson, NH 03051",NH, Granite State Indoor Range & Gun Shop
+31,"Transporting To (number, street, city, county, state, and zip code)","16001 Shooting Range Access NW
+Albuquerque, NM 87121",NM,Albuquerque Shooting Range Park
+31,"Transporting To (number, street, city, county, state, and zip code)","11357 North Decatur Blvd.
+Las Vegas, NV 89131",NV,Clark County Shooting Complex
+31,"Transporting To (number, street, city, county, state, and zip code)","6500 East 66th Street North
+Tulsa, Oklahoma 74117",OK,U.S. Shooting Academy
+31,"Transporting To (number, street, city, county, state, and zip code)","22811 OR-66
+Keno, OR 97627",OR,Bill Scholtes Klamath Sportsman's Park
+31,"Transporting To (number, street, city, county, state, and zip code)","2282 PA-314
+Henryville, PA 18332",PA,Sunset Hill Shooting Range
+31,"Transporting To (number, street, city, county, state, and zip code)","6489 Hwy 207
+Pageland, SC 29728",SC,Take Aim Training
+31,"Transporting To (number, street, city, county, state, and zip code)","27386 SD Hwy 79
+Hot Springs, SD 57747",SD,Fall River Shooting Complex
+31,"Transporting To (number, street, city, county, state, and zip code)","720 Windrock Rd
+Oliver Springs, TN 37840",TN,Windrock Shooting Range and Training Center
+31,"Transporting To (number, street, city, county, state, and zip code)","2381 Gun Range Rd.
+League City, Texas 77573",TX,Clear Creek Gun Range
+31,"Transporting To (number, street, city, county, state, and zip code)","6000 W 2100 S
+Salt Lake City, UT 84128",UT,Lee Kay Public Shooting Range
+31,"Transporting To (number, street, city, county, state, and zip code)","11250 Waples Mill Rd
+Fairfax, VA 22030",VA,NRA range
+31,"Transporting To (number, street, city, county, state, and zip code)","2069 Lime Kiln Rd
+Charlotte, VT 05445",VT,Laberge’s Farm
+31,"Transporting To (number, street, city, county, state, and zip code)","5102 Samish Way
+Bellingham, WA",WA,Plantation Rifle Range
+31,"Transporting To (number, street, city, county, state, and zip code)","5184 WI-19
+Waunakee, WI 53597",WI,Dane County Law Enforcement Training Center
+31,"Transporting To (number, street, city, county, state, and zip code)","127 White Horse Lane
+Philippi, WV 26416",WV,"White Horse Firearms and 
+Outdoor Education Center"
+31,"Transporting To (number, street, city, county, state, and zip code)","2201 Gun Club Rd
+Rawlins, WY 82301",WY,Rawlins Outdoor Shooting Complex
