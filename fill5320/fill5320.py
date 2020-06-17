@@ -22,8 +22,16 @@ SIGNED_DIR = "signed"
 FILLED_DIR = "filled"
 DEST_CSV = "destinations_data.csv"
 STATIC_CSV = "static_data.csv"
+FIREARMS_CSV = "firearms_data.csv"
 FIELDS_FILE = "fields.json"
 SIGNATURE_LOCATION = "1x70x195x200x12"
+MANUF_FIELD_ID = 8
+TYPE_FIELD_ID = 11
+CAL_FIELD_ID = 14
+MODEL_FIELD_ID = 17
+BARREL_FIELD_ID = 20
+OVERALL_FIELD_ID = 23
+SERIAL_FIELD_ID = 26
 
 
 def _get_tmp_filename(suffix=".pdf"):
@@ -101,6 +109,23 @@ def read_dest_data(instream):
     return form_data
 
 
+def read_firearms_data(instream):
+    form_data = {}
+    row_num = -1
+    for row in csv.reader(instream):
+        if row_num > -1:
+            form_data[row_num] = {}
+            form_data[row_num]["manufacturer"] = str(row[0])
+            form_data[row_num]["type_of_firearm"] = str(row[1])
+            form_data[row_num]["caliber"] = str(row[2])
+            form_data[row_num]["model"] = str(row[3])
+            form_data[row_num]["barrel_length"] = str(row[4])
+            form_data[row_num]["overall_length"] = str(row[5])
+            form_data[row_num]["serial_number"] = str(row[6])
+        row_num += 1
+    return form_data
+
+
 def main(argv=None):
     args = parse_cli(argv or sys.argv[1:])
 
@@ -110,34 +135,88 @@ def main(argv=None):
     with open(args.dest_file, "r", encoding="utf-8") as df:
         form_dest_data = read_dest_data(df)
 
+    with open(args.firearms_file, "r", encoding="utf-8") as df:
+        form_firearms_data = read_firearms_data(df)
+
     field_defs = load_field_defs(args.field_defs)
 
-    for fd, fd_val in form_static_data.items():
-        for di, dest in form_dest_data.items():
-            fileparts = fd.split(".")
-            fd_val[dest["id"]] = dest["address"]
-            fd_val[DATE_FIELD] = datetime.now().strftime("%x")
-            filename = "{}_{}.{}".format(fileparts[0], dest["postfix"], fileparts[1])
-            out_val = {filename: fd_val}
-            fg = fill_forms(
-                make_path(os.path.join(FILLED_DIR, "")), field_defs, out_val, True
-            )
+    num_forms_req = len(form_firearms_data) % 3
 
-            for filepath in fg:
-                print(filepath)
-            # sign it if the signature file is present
-            if os.path.exists(SIGNATURE_FILE):
-                os.makedirs(
-                    os.path.dirname(os.path.join(SIGNED_DIR, "")), exist_ok=True
+    print("{} forms required.".format(num_forms_req))
+
+    for fd, fd_val in form_static_data.items():
+        for form in range(0, num_forms_req):
+            for di, dest in form_dest_data.items():
+                fileparts = fd.split(".")
+                fd_val[dest["id"]] = dest["address"]
+                fd_val[DATE_FIELD] = datetime.now().strftime("%x")
+                for firearm in range(0, 3):
+                    try:
+
+                        fd_val[str(MANUF_FIELD_ID + firearm)] = form_firearms_data[
+                            firearm + 3 * form
+                        ]["manufacturer"]
+                        fd_val[str(TYPE_FIELD_ID + firearm)] = form_firearms_data[
+                            firearm + 3 * form
+                        ]["type_of_firearm"]
+                        fd_val[str(CAL_FIELD_ID + firearm)] = form_firearms_data[
+                            firearm + 3 * form
+                        ]["caliber"]
+                        fd_val[str(MODEL_FIELD_ID + firearm)] = form_firearms_data[
+                            firearm + 3 * form
+                        ]["model"]
+                        fd_val[str(BARREL_FIELD_ID + firearm)] = form_firearms_data[
+                            firearm + 3 * form
+                        ]["barrel_length"]
+                        fd_val[str(OVERALL_FIELD_ID + firearm)] = form_firearms_data[
+                            firearm + 3 * form
+                        ]["overall_length"]
+                        fd_val[str(SERIAL_FIELD_ID + firearm)] = form_firearms_data[
+                            firearm + 3 * form
+                        ]["serial_number"]
+                    except KeyError:
+                        if di == 1:
+                            print(
+                                "Not enough values to fill form {}, item {}.".format(
+                                    form, firearm
+                                )
+                            )
+                        fd_val[str(MANUF_FIELD_ID + firearm)] = ""
+                        fd_val[str(TYPE_FIELD_ID + firearm)] = ""
+                        fd_val[str(CAL_FIELD_ID + firearm)] = ""
+                        fd_val[str(MODEL_FIELD_ID + firearm)] = ""
+                        fd_val[str(BARREL_FIELD_ID + firearm)] = ""
+                        fd_val[str(OVERALL_FIELD_ID + firearm)] = ""
+                        fd_val[str(SERIAL_FIELD_ID + firearm)] = ""
+
+                if num_forms_req > 1:
+                    filename = "{}_{}-{}.{}".format(
+                        fileparts[0], dest["postfix"], form, fileparts[1]
+                    )
+                else:
+                    filename = "{}_{}.{}".format(
+                        fileparts[0], dest["postfix"], fileparts[1]
+                    )
+                out_val = {filename: fd_val}
+                fg = fill_forms(
+                    make_path(os.path.join(FILLED_DIR, "")), field_defs, out_val, True
                 )
-                sign_pdf(
-                    os.path.join(SIGNED_DIR, filename),
-                    os.path.join(FILLED_DIR, filename),
-                    args.signature_image,
-                    args.signature_position,
-                )
-            else:
-                print("No signature file (signature.png) exists, skipping.")
+
+                for filepath in fg:
+                    print("Saved form as: {}".format(filepath))
+                # sign it if the signature file is present
+                if os.path.exists(SIGNATURE_FILE):
+                    os.makedirs(
+                        os.path.dirname(os.path.join(SIGNED_DIR, "")), exist_ok=True
+                    )
+                    sign_pdf(
+                        os.path.join(SIGNED_DIR, filename),
+                        os.path.join(FILLED_DIR, filename),
+                        args.signature_image,
+                        args.signature_position,
+                    )
+                else:
+                    print("No signature file (signature.png) exists, skipping.")
 
 
 def parse_cli(*args):
@@ -153,6 +232,12 @@ def parse_cli(*args):
         "--dest-file",
         default=DEST_CSV,
         help="Destinations csv file (default: destinations_data.csv)",
+    )
+    parser.add_argument(
+        "-r",
+        "--firearms-file",
+        default=FIREARMS_CSV,
+        help="Firearms csv file (default: firearms_data.csv)",
     )
     parser.add_argument(
         "-f",
