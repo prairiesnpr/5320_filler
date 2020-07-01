@@ -140,7 +140,7 @@ def main(argv=None):
 
     field_defs = load_field_defs(args.field_defs)
 
-    num_forms_req = len(form_firearms_data) % 3
+    num_forms_req = len(form_firearms_data) // 3 + 1
 
     print("{} forms required.".format(num_forms_req))
 
